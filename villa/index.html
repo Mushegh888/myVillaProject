@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VILLA</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="media.css">
+
+</head>
+<body  onscroll="fix()">
+	<div class="main">
+		<div class="info d-lg-flex d-none justify-content-between">
+			<div class="mail d-flex align-items-center">
+				<div class="gmail d-flex gap-3 align-items-center">
+					<i class="fa-solid fa-envelope"></i>
+					<span>info@company.com</span>
+				</div>
+				<div class="loc d-flex gap-3 align-items-center">
+					<i class="fa-solid fa-map"></i>
+					<span>Sunny Isles Beach, FL 33160</span>
+				</div>
+			</div>
+			<div class="icons d-flex gap-3">
+				<a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            	<a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            	<a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+			</div>
+		</div>
+		<div class="menu d-flex align-items-center justify-content-between">
+			<h1 class="logo col-lg-1 col-auto"><a href="index.html">VILLA</a></h1>
+			<ul class="list d-md-flex d-none mb-0 px-4 gap-4 col-auto
+			gap-lg-5 col-lg-9 
+			justify-content-lg-end justify-content-center">
+				<li><a href="index.html" class="active-li">Home</a></li>
+				<li><a href="prop.html">Properties</a></li>
+				<li><a href="propDet.html">Property Details</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+			<div class="schedule d-md-flex d-none align-items-center col-auto">
+				<div class="circle d-flex justify-content-center align-items-center"><i class="fa-solid fa-calendar"></i></div>
+				<a class="d-lg-block d-none" href="propDet.html">Schedule a visit</a>
+			</div>
+			<div onclick="menuShow(this)" class="bars d-grid gap-2 align-items-center d-md-none">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="list2 d-grid d-md-none">
+				<li class="text-center"><a href="index.html" class="active-li">Home</a></li>
+				<li class="text-center"><a href="prop.html">Properties</a></li>
+				<li class="text-center"><a href="propDet.html">Property Details</a></li>
+				<li class="text-center"><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+		
+		<div class="content">
+			<div class="content_main" index=0>
+				<div class="back_dark"></div>
+				<div class="location d-flex px-2 py-1 gap-1">
+					<span class="city">Toronto,</span>
+					<span class="country">Canada</span>
+				</div>
+				<div class="headline">
+					hurry!<br> get the best<br> villa for you
+				</div>
+			</div>
+			
+			<div class="next d-flex align-items-center justify-content-center">
+				<a onclick="next()" class="d-flex justify-content-center align-items-center">
+					<i class="fa-solid fa-chevron-right"></i>
+				</a>
+			</div>
+			<div class="per d-flex align-items-center justify-content-center">
+				<a onclick="prev()" class="d-flex justify-content-center align-items-center">
+					<i class="fa-solid fa-chevron-left"></i>
+				</a>
+			</div>
+			<div class="pult d-flex gap-2 align-items-center">
+				<div class="dod" onclick="slide(this)" index = 0></div>
+				<div class="dod" onclick="slide(this)" index = 1></div>
+				<div class="dod" onclick="slide(this)" index = 2></div>
+			</div>
+		</div>
+
+		<div class="apartment d-lg-flex d-grid justify-content-center gap-5 gap-lg-0">
+			<div class="apartment_img">
+				<div class="main_img"></div>
+				<a class="markk" href="#"><img src="ap_1/icon5.png"></a>
+			</div>
+			<div class="apartment_box1 col-lg-6 px-lg-5 px-0 py-lg-0 py-5">
+				<span class="pink_headline">| Featured</span>
+				<h1>Best Appartment & Sea view</h1>
+				<div id="info_box" class="info_box d-grid">
+					<div class="option d-grid" index=0>
+						<span>Best useful links ?</span>
+						<span>Get the best villa website template in HTML CSS and Bootstrap for your business. TemplateMo provides you the best free CSS templates in the world. Please tell your friends about it.</span>
+					</div>
+					<div class="option d-grid" index=1>
+						<span>How does this work ?</span>
+						<span>Get the best villa website template in HTML CSS and Bootstrap for your business. TemplateMo provides you the best free CSS templates in the world. Please tell your friends about it.</span>
+					</div>
+					<div class="option d-grid" index=2>
+						<span>Why is Villa Agency the best ?</span>
+						<span>Get the best villa website template in HTML CSS and Bootstrap for your business. TemplateMo provides you the best free CSS templates in the world. Please tell your friends about it.</span>
+					</div>
+				</div>
+			</div>
+			<div class="apartment_box2 col-lg-3 d-grid px-4">
+				<div class="item d-flex gap-3 align-items-center">
+					<img src="ap_1/icon1.png">
+					<div class="text d-grid">
+						<h4>250m<sup>2</sup></h4>
+						<span>Total Flat Space</span>
+					</div>
+				</div>
+				<div class="item d-flex gap-3 align-items-center">
+					<img src="ap_1/icon1.png">
+					<div class="text d-grid">
+						<h4>Contract</h4>
+						<span>Contract Ready</span>
+					</div>
+				</div>
+				<div class="item d-flex gap-3 align-items-center">
+					<img src="ap_1/icon1.png">
+					<div class="text d-grid">
+						<h4>Payment</h4>
+						<span>Payment Process</span>
+					</div>
+				</div>
+				<div class="item d-flex gap-3 align-items-center">
+					<img src="ap_1/icon1.png">
+					<div class="text d-grid">
+						<h4>Safety</h4>
+						<span>24/7 Under Control</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="video_div d-grid justify-content-center">
+		<div class="video_div_blur"></div>
+		<div class="video_div_text">
+			<span class="pink_headline">| Video View</span>
+			<h1>Get Closer View & Different Feeling</h1>
+		</div>
+		<div class="video">
+			<a href="https://www.youtube.com/" target="_blank"><i class="fa-solid fa-play"></i></a>
+		</div>
+	</div>
+	<div class="achivements d-lg-flex d-grid gap-5 justify-content-lg-between align-items-center">
+		<div class="ach_item">
+			<div class="ach_item_circle"></div>
+			<div class="ach_item_main d-flex align-items-center gap-4">
+				<h1>34</h1>
+				<span>Buildings Finished Now</span>
+			</div>
+		</div>
+		<div class="ach_item">
+			<div class="ach_item_circle"></div>
+			<div class="ach_item_main d-flex align-items-center gap-4">
+				<h1>12</h1>
+				<span>Years Experience</span>
+			</div>
+		</div>
+		<div class="ach_item">
+			<div class="ach_item_circle"></div>
+			<div class="ach_item_main d-flex align-items-center gap-4">
+				<h1>99</h1>
+				<span>Awwards Won 2023</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="offer d-grid gap-5">
+		<div class="offer_header d-flex flex-wrap gap-3 justify-content-lg-between align-items-center">
+			<div class="offer_text text-lg-left">
+				<span class="pink_headline">| Best Deal</span>
+				<h1>Find Your Best Deal Right Now!</h1>
+			</div>
+			<div class="offer_buttons d-flex flex-wrap gap-3  
+			align-items-end gap-lg-5 gap-2 justify-content-center">
+				<button class="offer_but active-btn" name="appartment">Appartment</button>
+				<button class="offer_but" name="villa">Villa House</button>
+				<button class="offer_but" name="penthouse">Penthouse</button>
+			</div>
+		</div>
+		<div class="offer_main d-lg-flex d-grid gap-5 justify-content-lg-between align-items-start"></div>
+	</div>
+
+
+	<div class="all_offers">
+		<span class="pink_headline">| Properties</span>
+		<h1 class="black_headline">We Provide The Best Property You Like</h1>
+		<div class="offers_table d-grid">
+			<div class="table_item d-grid justify-items-center gap-3 py-4 px-5">
+				<a href="#"><img src="offers/img1.jpg" alt="Luxury Villa"></a>
+				<div class="item_info d-grid gap-3 justify-items-center">
+					<div class="item_info_head d-md-flex d-grid justify-content-md-between">
+						<span class="category">Luxury Villa</span>
+						<strong class="price">$2.264.000</strong>
+            		</div>
+            		<a href="#"><strong>12 New Street Miami, OR 12650</strong></a>
+            		<div class="more d-flex flex-wrap gap-3">
+                		<span>Bedrooms: <b>8</b></span>
+                		<span>Bathrooms: <b>3</b></span>
+                		<span>Area: <b>124m<sup>2</sup></b></span>
+                		<span>Floor: <b>25th</b></span>
+                		<span>Parking: <b>2 cars</b></span>
+            		</div>
+            		<hr>
+            		<button>Schedule a visit</button>
+            	</div>
+            </div>
+    	</div>
+    </div>
+
+	<div class="footerBig">
+		<div class="footer d-grid justify-content-center">
+			<div class="footer_div_blur"></div>
+			<div class="footer_div_text">
+				<span class="pink_headline">| Contact Us</span>
+				<h1>Get In Touch With Our Agents</h1>
+			</div>
+		</div>
+		<div class="footer_content d-lg-flex justify-content-lg-between d-grid gap-5">
+			<div class="contact d-grid gap-3">
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27288.236166854018!2d-80.12572577607133!3d25.91584671046697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9acfee073549d%3A0xf4e74db7a5da487a!2zU3VubnkgSXNsZXMgQmVhY2gsINWW1azVuNaA1avVpNWhIDMzMTYwLCDVhNWr1aHWgdW11aHVrCDVhtWh1bDVodW21aPVttWl1oA!5e1!3m2!1shy!2sam!4v1732880410329!5m2!1shy!2sam" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="contact_info d-lg-flex flex-wrap d-grid gap-4 justify-content-lg-between">
+					<div class="contact_info_item d-flex align-items-center justify-content-lg-between gap-5">
+						<i class="fa-solid fa-phone"></i>
+						<div class="item_text">
+							<h4>010-020-0340</h4>
+							<span>Phone Number</span>
+						</div>
+					</div>
+					<div class="contact_info_item d-flex align-items-center justify-content-lg-between gap-5">
+						<i class="fa-regular fa-envelope"></i>
+						<div class="item_text">
+							<h4>info@villa.com</h4>
+							<span>Business Email</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<form class="form col-lg-5 d-grid gap-2">
+				<div>
+					<p>Full Name</p>
+					<input class="input" type="text" name="" placeholder="Your Name...">
+				</div>
+				<div>
+					<p>Email Address</p>
+					<input class="input" type="email" name="" placeholder="Your E-mail...">
+				</div>
+				<div>
+					<p>Subject</p>
+					<input class="input" type="text" name="" placeholder="Subject...">
+				</div>
+				<div>
+					<p>Message</p>
+					<textarea>Your Message</textarea>
+				</div>
+				<input class="submit" type="submit" name="" value="Send Message">
+			</form>
+		</div>
+	</div>
+    
+
+	<div class="footerEnd d-flex flex-wrap justify-content-center gap-2">
+        <span>Copyright © 2048 Villa Agency Co.,</span>
+        <span>Ltd. All rights reserved.</span>
+        <span>Design: <span style="color: var(--orange);">Musho</span></span>
+    </div>
+
+	<script src="main.js"></script>
+	<script src="index.js"></script>
+	<script src="offer.js"></script>
+	<script type="module" src="prop.js"></script>
+	<script type="module" src="paint.js"></script>
+</body>
+</html>
